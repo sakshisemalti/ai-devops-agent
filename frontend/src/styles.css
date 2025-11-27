@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap');
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #111827; /* deep charcoal */
+  color: #e2e8f0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Container */
+.app-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3B82F6; /* electric blue */
+  border: 2px solid #3C4558; /* subtle outline border */
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* subtle shadow */
+}
+
+.subtitle {
+  color: #8B5CF6; /* violet */
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Glass cards */
+.card.glass {
+  background: rgba(31, 41, 55, 0.85); /* slate gray with transparency */
+  border: 1px solid rgba(59, 130, 246, 0.3); /* electric blue border */
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.glass:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.25);
+}
+
+/* Inputs */
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 8px;
+  border: 1px solid #3B82F6;
+  background: #1F2937; /* slate gray */
+  color: #e2e8f0;
+  font-family: 'JetBrains Mono', monospace;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #8B5CF6;
+}
+
+/* Buttons */
+button {
+  background: #28303F;
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #3C4558;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+button:hover {
+  background: #3C4558;
+  border-color: #4C8BF5;
+}
+
+button:disabled {
+  background: #374151;
+  cursor: not-allowed;
+}
+
+/* Futuristic moving background grid */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: 
+    linear-gradient(90deg, rgba(59,130,246,0.08) 1px, transparent 1px),
+    linear-gradient(rgba(139,92,246,0.08) 1px, transparent 1px);
+  background-size: 70px 70px;
+  animation: moveGrid 40s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveGrid {
+  from { transform: translate(0,0); }
+  to { transform: translate(-70px,-70px); }
+}
