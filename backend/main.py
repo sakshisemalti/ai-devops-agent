@@ -7,16 +7,20 @@ from routes import repo, code
 
 load_dotenv()
 
-origins = [os.getenv("APP_ORIGIN", "http://localhost:5173")]
+# Allow both local dev and deployed frontend
+origins = [
+    "http://localhost:5173",                # local dev
+    "https://your-frontend.vercel.app"      # replace with your actual Vercel URL
+]
 
 app = FastAPI(title="AI DevOps Agent")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # Which origins can talk to backend
+    allow_origins=origins,       # Which origins can talk to backend
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods (POST, GET, etc.)
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["*"],         # Allow all HTTP methods (POST, GET, etc.)
+    allow_headers=["*"],         # Allow all headers
 )
 
 # Initialize DB tables
