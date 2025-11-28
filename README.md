@@ -101,7 +101,9 @@ Contributions are welcome!This project is open for changes.
 - Push to your branch (git push origin feature-name)
 
 - Open a Pull Request
+  
 Please ensure your code passes Black formatting and pytest before submitting.
+
 ⚠️ Note: Only high-quality PRs that follow project standards and improve functionality will be accepted. Low-effort or untested contributions will be reject
 
 ---
