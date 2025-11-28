@@ -10,7 +10,7 @@ load_dotenv()
 # Allow both local dev and deployed frontend
 origins = [
     "http://localhost:5173",                # local dev
-    "https://your-frontend.vercel.app"      # replace with your actual Vercel URL
+    "https://ai-devops-agent-beta.vercel.app/"      # replace with your actual Vercel URL
 ]
 
 app = FastAPI(title="AI DevOps Agent")
