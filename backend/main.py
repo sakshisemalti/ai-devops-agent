@@ -10,7 +10,7 @@ load_dotenv()
 # Allow both local dev and deployed frontend
 origins = [
     "http://localhost:5173",                # local dev
-    "https://ai-devops-agent-beta.vercel.app/"      # replace with your actual Vercel URL
+    "https://ai-devops-agent-beta.vercel.app"      # replace with your actual Vercel URL
 ]
 
 app = FastAPI(title="AI DevOps Agent")
@@ -19,7 +19,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,       # Which origins can talk to backend
     allow_credentials=True,
-    allow_methods=["*"],         # Allow all HTTP methods (POST, GET, etc.)
+    allow_methods=["*"],       a  # Allow all HTTP methods (POST, GET, etc.)
     allow_headers=["*"],         # Allow all headers
 )
 
