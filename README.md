@@ -21,11 +21,14 @@ AI DevOps Agent is an intelligent automation tool that seamlessly integrates wit
 ---
 
 ## 🛠️ How the Code Works
+
 ### Backend (FastAPI + Python)
 - **`services/github_client.py`**  
   Handles GitHub API calls: branch creation, file updates, PR creation, file listing.
+
 - **`services/fixers.py`**  
   Runs Black, pytest, and AI refactoring. Sanitizes Ollama output to strip markdown fences and explanations.
+
 - **`routes/code.py`**  
   FastAPI route `/fix-and-pr`:
   1. Clones repo locally
@@ -34,6 +37,12 @@ AI DevOps Agent is an intelligent automation tool that seamlessly integrates wit
   4. Runs Black + pytest
   5. If tests fail, re-prompts AI with feedback
   6. Commits changes and raises PR
+
+- **`lint.py`**  
+  Provides **static analysis and linting checks** before code is committed.  
+  - Ensures code follows PEP8 and project style rules  
+  - Detects unused imports, variables, and potential bugs  
+  - Acts as a **pre‑commit quality gate** before AI fixes and PR creation  
 
 ### AI Integration
 - **Ollama + CodeLlama**  
