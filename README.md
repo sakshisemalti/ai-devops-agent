@@ -1,8 +1,8 @@
 # 🚀 AI DevOps Agent – Autonomous DevOps Agent
 
-Ai DevOps Agent is an **AI-powered DevOps assistant** that connects to your GitHub repository, automatically **fixes broken code**, refactors it for style and quality, runs tests, and raises pull requests — all without manual intervention.  
+Ai DevOps Agent is an **AI-powered DevOps assistant** that connects to your GitHub repository, automatically **fixes broken code**, refactors it for style and quality, runs tests, and raises pull requests, all without manual intervention.  
 
-It combines **backend automation**, **AI reasoning**, and a **frontend dashboard** to deliver a futuristic developer workflow.
+It combines **backend automation**, **AI reasoning** and a **frontend dashboard** to deliver a futuristic developer workflow.
 
 ---
 
@@ -16,7 +16,7 @@ It combines **backend automation**, **AI reasoning**, and a **frontend dashboard
 - **Formatting**: Runs **Black** to enforce consistent style.
 - **Testing**: Executes **pytest** to validate correctness.
 - **Pull Requests**: Automatically commits changes and raises a PR back to your repo.
-- **Frontend Dashboard**: React UI to connect repos, trigger checks, and view PR status.
+- **Frontend Dashboard**: React UI to connect repos, trigger checks and view PR status.
 
 ---
 
@@ -79,7 +79,7 @@ npm run dev
 ## Usage
 - Connect your GitHub repo in the UI.
 
-- Trigger Code Check to refactor, format, and fix broken code.
+- Trigger Code Check to refactor, format and fix broken code.
 
 - Backend runs Black and pytest automatically.
 
