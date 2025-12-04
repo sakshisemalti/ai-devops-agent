@@ -1,5 +1,5 @@
 # 🚀 AI DevOps Agent – Autonomous DevOps Agent
-> ⚡ **AI DevOps Agent** – Automating code fixes, testing, and pull requests with intelligent backend + AI reasoning.
+> ⚡ **AI DevOps Agent** – Automating code fixes, testing and pull requests with intelligent backend + AI reasoning.
 
 ## 🛠️ Tech Stack
 
@@ -16,7 +16,7 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) 
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-AI DevOps Agent is an intelligent automation tool that seamlessly integrates with GitHub repositories to streamline the entire development workflow. It leverages AI to detect and repair broken code, refactor for readability and style, and validate changes through automated testing. Once verified, it raises clean, well‑structured pull requests, all with minimal human intervention.
+AI DevOps Agent is an intelligent automation tool that seamlessly integrates with GitHub repositories to streamline the entire development workflow. It leverages AI to detect and repair broken code, refactor for readability and style and validate changes through automated testing. Once verified, it raises clean, well‑structured pull requests, all with minimal human intervention.
 
 ---
 
